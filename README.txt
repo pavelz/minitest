@@ -59,8 +59,7 @@ Given that you'd like to test the following class:
 
 === Unit tests
 
-  require 'minitest/unit'
-  MiniTest::Unit.autorun
+  require 'minitest/autorun'
 
   class TestMeme < MiniTest::Unit::TestCase
     def setup
@@ -78,8 +77,7 @@ Given that you'd like to test the following class:
 
 === Specs
 
-  require 'minitest/spec'
-  MiniTest::Unit.autorun
+  require 'minitest/autorun'
 
   describe Meme do
     before do
