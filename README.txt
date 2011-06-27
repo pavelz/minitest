@@ -1,6 +1,7 @@
-= minitest/*
+= minitest/{unit,spec,mock,benchmark}
 
-* http://rubyforge.org/projects/bfts
+home :: https://github.com/seattlerb/minitest
+rdoc :: http://bfts.rubyforge.org/minitest
 
 == DESCRIPTION:
 
@@ -23,7 +24,6 @@ one!
 minitest/mock by Steven Baker, is a beautifully tiny mock object
 framework.
 
-output.
 
 minitest/unit is meant to have a clean implementation for language
 implementors that need a minimal set of methods to bootstrap a working
@@ -245,7 +245,7 @@ the gem, but you'll need to activate the gem explicitly to use it:
 
 (The MIT License)
 
-Copyright (c) Ryan Davis, Seattle.rb
+Copyright (c) Ryan Davis, seattle.rb
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
