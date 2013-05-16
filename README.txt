@@ -245,7 +245,7 @@ bogus example:
         end
       end
 
-      def self.plugin_bogus_init
+      def self.plugin_bogus_init(options)
         self.reporter << MyCI.new if options[:myci]
       end
     end
