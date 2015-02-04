@@ -458,6 +458,7 @@ minitest-firemock           :: Makes your Minitest mocks more resilient.
 minitest-great_expectations :: Generally useful additions to minitest's
                                assertions and expectations.
 minitest-growl              :: Test notifier for minitest via growl.
+minitest-happy              :: GLOBALLY ACTIVATE MINITEST ! RAWR!
 minitest-implicit-subject   :: Implicit declaration of the test subject.
 minitest-instrument         :: Instrument ActiveSupport::Notifications when
                                test method is executed.
