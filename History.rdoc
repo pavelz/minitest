@@ -134,7 +134,6 @@
 
 * 2 bug fixes:
 
-  * Only require minitest, not minitest/autorun in pride_plugin. (judofyr)
   * Require rubygems in load_plugins in case you're not using minitest/autorun.
 
 === 5.0.6 / 2013-06-28
@@ -191,7 +190,6 @@
 * 3 bug fixes:
 
   * Gem.find_files is smarter than I remember... cause I wrote it that way. *sigh* I'm getting old.
-  * Pride wasn't doing puts through its #io. (tmiller/tenderlove)
   * Replaced Runnable#dup and Test#dup with marshal_dump/load. Too many problems cropping up on untested rails code. (tenderlove/rubys)
 
 === 5.0.1 / 2013-05-14
@@ -236,8 +234,6 @@ Minitest 5:
   * Moved Test to minitest/test.rb
   * Moved everything else in minitest/unit.rb to minitest.rb
   * minitest/unit.rb is now just a small (user-test only) compatibility layer.
-  * Moved most of minitest/pride into minitest/pride_plugin.
-  * minitest/pride now just activates pride.
   * Moved ParallelEach under Minitest.
 
 * 9 additions:
@@ -263,7 +259,6 @@ Minitest 5:
   * Runnable#run needs to return self. Allows for swapping of results as needed.
   * Minitest.init_plugins passes down options.
   * Minitest.load_plugins only loads once.
-  * Fixed minitest/pride to work with rake test loader again. (tmiller)
   * Added count/size to ParallelEach to fix use w/in stdlib's test/unit. :( (btaitelb)
 
 * 5 voodoo:
@@ -449,7 +444,6 @@ back.
 * 3 bug fixes:
 
   * Add include_private param to MiniTest::Mock#respond_to? (rf-)
-  * Fixed use of minitest/pride with --help. (zw963)
   * Made 'No visible difference.' message more clear. (ckrailo)
 
 === 3.5.0 / 2012-09-21
@@ -653,7 +647,6 @@ back.
 * 2 minor enhancements:
 
   * Include failed values in the expected arg output in MockExpectationError. (nono)
-  * Make minitest/pride work with other 256 color capable terms. (sunaku)
 
 * 2 bug fixes:
 
@@ -703,7 +696,6 @@ back.
   * Added 2 more arguments against rspec: let & subject in 9 loc! (emmanuel/luis)
   * Added TestCase.i_suck_and_my_tests_are_order_dependent!
   * Extended describe to take an optional method name (2 line change!). (emmanuel)
-  * Refactored and extended minitest/pride to do full 256 color support. (lolcat)
 
 * 1 bug fix:
 
@@ -721,7 +713,6 @@ back.
 * 4 bug fixes:
 
   * Fix Assertions#mu_pp to deal with immutable encoded strings. (ferrous26)
-  * Fix minitest/pride for MacRuby (ferrous26)
   * Made error output less fancy so it is more readable
   * Mock shouldn't undef === and inspect. (dgraham)
 
