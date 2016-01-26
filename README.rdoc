@@ -68,6 +68,7 @@ extract-method refactorings still apply.
 * minitest/mock - a simple and clean mock/stub system.
 * minitest/benchmark - an awesome way to assert your algorithm's performance.
 * Incredibly small and fast runner, but no bells and whistles.
+* Written by squishy human beings. Software can never be perfect. We will all eventually die.
 
 == RATIONALE:
 
